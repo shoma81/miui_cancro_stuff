@@ -1,0 +1,5 @@
+#!/system/bin/sh
+# enable/disable torch with volume - key
+#for Mi4 device
+#
+(rep=0; script -q -c 'getevent /dev/input/event0' /dev/null | while read code; do torch=`cat /sys/devices/qcom,camera-led-flash.84/leds/flashlight/brightness`; screen=`cat /sys/devices/mdp.0/qcom,mdss_fb_primary.172/leds/lcd-backlight/brightness`; (echo "$code" | grep -q '^0001 0072 00000001.$') && [ "$rep" = "0" ] && [ "$screen" = "0" ] && ( torch=$(expr 255 - $torch); echo "$torch" > /sys/devices/qcom,camera-led-flash.84/leds/flashlight/brightness ); rep=$( expr 1 - $rep ); done ) < /dev/null > /dev/null 2>/dev/null &
