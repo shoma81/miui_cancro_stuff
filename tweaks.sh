@@ -36,7 +36,7 @@ echo "# picture quality" >> /system/build.prop;
 echo "ro.media.enc.jpeg.quality=100" >> /system/build.prop;
 echo "# system tuning" >> /system/build.prop;
 echo "debug.performance.tuning=1" >> /system/build.prop;
-echo "# qualcomm svi service activated" >> /system/build.prop;
+echo "# qualcomm svi service activation" >> /system/build.prop;
 echo "ro.qualcomm.svi=1" >> /system/build.prop;
 echo "# qualcomm sensor tweaks" >> /system/build.prop;
 echo "ro.qualcomm.sensors.qmd=true" >> /system/build.prop;
