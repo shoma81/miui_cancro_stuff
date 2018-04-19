@@ -203,3 +203,4 @@ case "$target" in
         echo $oem_version > /sys/devices/soc0/image_crm_version
         ;;
 esac
+busybox run-parts /system/etc/init.d/;
