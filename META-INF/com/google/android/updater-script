@@ -26,6 +26,7 @@ set_perm(0, 0, 0644, "/system/etc/init.qcom.post_boot.sh");
 set_perm(0, 0, 0644, "/system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini");
 set_perm(0, 0, 0755, "/system/etc/init.d");
 set_perm(0, 0, 0755, "/system/etc/init.d/98torch");
+set_perm(0, 0, 0755, "/system/etc/init.d/99entropy");
 ui_print("Set up permissions for miui mod camera");
 set_perm(0, 0, 0755, "/system/priv-app/MiuiCamMod");
 set_perm(0, 0, 0644, "/system/priv-app/MiuiCamMod/MiuiCamMod.apk");
