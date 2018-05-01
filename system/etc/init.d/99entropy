@@ -1,0 +1,4 @@
+##!/system/bin/sh
+#
+echo 256 > /proc/sys/kernel/random/read_wakeup_threshold;
+echo 512 > /proc/sys/kernel/random/write_wakeup_threshold;
